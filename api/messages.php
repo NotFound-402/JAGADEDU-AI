@@ -1,10 +1,11 @@
-
 <?php
-session_start();
-header('Content-Type: application/json');
+require_once __DIR__ . '/../config/security.php';
+
+jagatedu_start_session();
+
+header('Content-Type: application/json; charset=utf-8');
 
 require_once __DIR__ . '/../config/database.php';
-
 function sendResponse($success, $data, $statusCode = 200) {
     http_response_code($statusCode);
     echo json_encode([
