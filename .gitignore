@@ -1,0 +1,24 @@
+# Environment dan API secrets
+.env
+.env.*
+!.env.example
+
+# Database lokal dan data pengguna
+database/jagatedu_ai.sql
+
+# Konfigurasi lokal dan rahasia
+config/*
+!config/security.php
+
+# Dependencies
+/vendor/
+
+# Log
+*.log
+
+# Temporary files
+*.tmp
+.DS_Store
+Thumbs.db
+
+test/
